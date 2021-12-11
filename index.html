@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook clone class project</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/user-3.jpg">
+</head>
+<body>
+    <header class="header">
+        <!-- left side of the header -->
+        <div class="header__left">
+            <svg class="header__logo">
+                <use xlink:href="images/sprite.svg#icon-facebook"></use>
+            </svg>
+            <div class="header__form">
+                <svg class="header__logo__form">
+                    <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+                <input type="text" class="header__form--input" placeholder="search facebook">
+            </div>
+        </div>
+
+        <!-- middle part of the header -->
+        <div class="header__middle">
+            <i class="header__middle--link">
+                <svg class="header__logo__middle logo-pos">
+                    <use xlink:href="images/sprite.svg#icon-home"></use>
+                </svg>
+            </i>
+            <i class="header__middle--link">
+                <span class="header__middle--notification">2+</span>
+                <svg class="header__logo__middle logo-pos">
+                    <use xlink:href="images/sprite.svg#icon-youtube-with-circle"></use>
+                </svg>
+            </i>
+            <i class="header__middle--link">
+                <svg class="header__logo__middle logo-pos">
+                    <use xlink:href="images/sprite.svg#icon-shop"></use>
+                </svg>
+            </i>
+            <i class="header__middle--link">
+                <span class="header__middle--notification">12</span>
+                <svg class="header__logo__middle logo-pos">
+                    <use xlink:href="images/sprite.svg#icon-group"></use>
+                </svg>
+            </i>
+            <i class="header__middle--link">
+                <span class="header__middle--notification">5+</span>
+                <svg class="header__logo__middle logo-pos">
+                    <use xlink:href="images/sprite.svg#icon-shop"></use>
+                </svg>
+            </i>
+        </div>
+
+        <!-- the right part of the header -->
+        <div class="header__right">
+            <div class="header__right--account-holder">
+                <span class="account__holder--avatar">
+                    <img src="images/user-3.jpg" alt="" class="avatar__image">
+                </span>
+                <span class="account__holder--name">Freshia Njoki</span>
+            </div>
+            <div class="header__right--icons">
+                <i class="header__middle--link">
+                    <svg class="header__logo__middle">
+                        <use xlink:href="images/sprite.svg#icon-dial-pad"></use>
+                    </svg>
+                </i>
+                <i class="header__middle--link">
+                    <svg class="header__logo__middle">
+                        <use xlink:href="images/sprite.svg#icon-bell"></use>
+                    </svg>
+                </i>
+                <i class="header__middle--link">
+                    <svg class="header__logo__middle">
+                        <use xlink:href="images/sprite.svg#icon-chevron-circle-down"></use>
+                    </svg>
+                </i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main -->
+    <main class="main">
+        <div class="main__left">
+            <div class="user">
+                <span class="user__avatar">
+                    <img src="images/user-3.jpg" alt="" class="avatar__image">
+                </span>
+                <span class="user__name">Freshia Njoki</span>
+            </div>
+
+            <!-- menu left container and children -->
+            <ol class="menu__left">
+                <li class="menu__left--item">
+                    <svg class="menu__left--svg">
+                        <use xlink:href="images/sprite.svg#icon-users"></use>
+                    </svg>
+                    <a href="#" class="menu__left--link">friends</a>
+                </li>
+                <li class="menu__left--item">
+                    <svg class="menu__left--svg">
+                        <use xlink:href="images/sprite.svg#icon-group"></use>
+                    </svg>
+                    <a href="#" class="menu__left--link">groups</a>
+                </li>
+                <li class="menu__left--item">
+                    <svg class="menu__left--svg">
+                        <use xlink:href="images/sprite.svg#icon-shop"></use>
+                    </svg>
+                    <a href="#" class="menu__left--link">marketplace</a>
+                </li>
+                <li class="menu__left--item">
+                    <svg class="menu__left--svg">
+                        <use xlink:href="images/sprite.svg#icon-youtube-with-circle"></use>
+                    </svg>
+                    <div class="menu__link-container">
+                        <a href="#" class="menu__left--link u-link">watch</a>
+                        <a href="#" class="menu__left--link-watch">+9 new videos</a>
+                    </div>
+                </li>
+                <li class="menu__left--item">
+                    <svg class="menu__left--svg">
+                        <use xlink:href="images/sprite.svg#icon-birthday-cake"></use>
+                    </svg>
+                    <a href="#" class="menu__left--link">memories</a>
+                </li>
+            </ol>
+            <div class="more">
+                <span class="more__svg--circle">
+                    <svg class="more--svg">
+                        <use xlink:href="images/sprite.svg#icon-chevron-down"></use>
+                    </svg>
+                </span>
+                <a href="#" class="u-link">see more</a>
+            </div>
+
+            <!-- groups -->
+            <h5 class="title--small">
+                your shortcuts
+            </h5>
+        </div>
+        <div class="main__middle">middle part of the main</div>
+
+
+
+
+        <!-- the rightmost part of the webpage -->
+        <div class="main__right">
+            <div class="birthday">
+                <div class="birthday__svg-container">
+                    <svg class="birthday__svg--icon">
+                        <use xlink:href="images/sprite.svg#icon-birthday-cake"></use>
+                    </svg>
+                    <span class="birthday__svg--text">birthday</span>
+                    <svg class="birthday__svg--icon">
+                        <use xlink:href="images/sprite.svg#icon-cross"></use>
+                    </svg>
+                </div>
+                <div class="birthday__notification">
+                    <p class="birthday__notification--text">
+                        <span class="bold">Humphrey Muriungi and 5 others</span> have their birthday today
+                    </p>
+                </div>
+            </div>
+
+            <!-- sponsored part of the right part -->
+            <div class="sponsored__container">
+                <h1 class="heading__tertiary">
+                    sponsored
+                </h1>
+                <div class="sponsored__cards--container">
+                    <div class="sponsored">
+                        <div class="sponsored__image">
+                            <img src="/images/corona.jpg" alt="" class="sponsored__image--img">
+                        </div>
+                        <div class="sponsored__text">
+                            <span class="sponsored__text--title">latest covid news</span>
+                            <span class="sponsored__link">
+                                <a href="#" class="sponsored__text--link">covid.com</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sponsored">
+                        <div class="sponsored__image">
+                            <img src="/images/corona.jpg" alt="" class="sponsored__image--img">
+                        </div>
+                        <div class="sponsored__text">
+                            <span class="sponsored__text--title">latest covid news</span>
+                            <span class="sponsored__link">
+                                <a href="#" class="sponsored__text--link">covid.com</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
