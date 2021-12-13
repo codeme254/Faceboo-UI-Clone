@@ -92,6 +92,12 @@
 <symbol id="icon-thumbs-up" viewBox="0 0 20 20">
 <path d="M11 0h1v3l3 7v8c0 1.105-0.895 2-2 2v0h-8c-1.1 0-2.31-0.84-2.7-1.88l-2.3-6.12v-2c0-1.105 0.895-2 2-2v0h7v-6c0-1.105 0.895-2 2-2v0zM17 10h3v10h-3v-10z"></path>
 </symbol>
+<symbol id="icon-arrow-thin-right" viewBox="0 0 20 20">
+<path d="M16.172 9l-6.071-6.071 1.414-1.414 8.485 8.485-8.485 8.485-1.414-1.414 6.071-6.071h-16.172v-2z"></path>
+</symbol>
+<symbol id="icon-arrow-thin-left" viewBox="0 0 20 20">
+<path d="M3.828 9l6.071-6.071-1.414-1.414-8.485 8.485 8.485 8.485 1.414-1.414-6.071-6.071h16.172v-2h-16.172z"></path>
+</symbol>
 <!-- ends here -->
 </defs>
 </svg>
