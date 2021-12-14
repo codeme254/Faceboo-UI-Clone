@@ -12,6 +12,9 @@ html{
     --logo-size-small: 2rem;
     --logo-size-medium-2: 3rem;
     --sides-height: clamp(83vh, 83vh, 83vh);
+    --stories-width-confines: clamp(20rem, 20rem, 20rem);
+    --stories-width: 20rem;
+    --stories-height: 30rem;
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -186,6 +189,7 @@ body{
     grid-gap: 2rem;
     margin-top: 4rem;
     z-index: 1000;
+    /* background-color: #f0f0f0; */
 }
 .main__left{
     padding-left: 2rem;
@@ -605,25 +609,103 @@ body{
     align-items: center;
     justify-content: flex-start;
     overflow: scroll;
+    position: relative;
+    width: 90%;
+    margin: 1rem auto;
 }
-/* .container__stories::-webkit-scrollbar{
+.container__stories::-webkit-scrollbar{
     width: 0;
-} */
+}
 .container__stories--button{
+    padding: 1rem;
     font-size: 4rem;
     font-weight: 800;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
     border: none;
     outline: none;
+    position: sticky;
+    z-index: 20;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s ease;
+}
+.container__stories--button:hover{
+    background-color: #ccc;
+}
+.container__stories--button--left{
+    left: 0;
+}
+.container__stories--button--right{
+    right: 0;
+}
+.stories__button--svg{
+    --size: 2rem;
+    width: var(--size);
+    height: var(--size);
+}
+.stories-user{
+    width: clamp(15rem, 15rem, 15rem);
+    min-width: 15rem;
+    height: clamp(25rem, 25rem, 25rem);
+    margin-right: 1rem;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 0 3px;
+}
+.stories-user__image{
+    height: 80%;
+    z-index: 5;
+}
+.stories-user__image--img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.stories-user__svg{
+    background-color: #1877f2;
+    padding: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 120%);
+    z-index: 10;
+    box-sizing: content-box;
+    border: 4px solid white;
+}
+.stories-user__svg--icon{
+    --size: 2rem;
+    width: var(--size);
+    height: var(--size);
+    fill: white;
+}
+.stories-user__text{
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    padding: 1rem;
+    padding-bottom: .5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 .stories{
-    width: clamp(20rem, 20rem, 20rem);
-    min-width: 20rem;
-    height: clamp(30rem, 30rem, 30rem);
+    width: clamp(15rem, 15rem, 15rem);
+    min-width: 15rem;
+    height: clamp(25rem, 25rem, 25rem);
     position: relative;
     border-radius: 10px;
     overflow: auto;
@@ -661,4 +743,182 @@ body{
     letter-spacing: normal;
     font-weight: normal;
     color: white;
+}
+
+
+/* page updates part */
+.page-update{
+    width: 75%;
+    margin: 1rem auto;
+    box-shadow: 0 0 4px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.page-update__header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 8rem;
+    margin-bottom: 1rem;
+}
+.page-update__header--baselined{
+    align-self: flex-end;
+}
+.page-update__header>*:not(:last-child){
+    margin-right: auto;
+}
+.page-update__header--svg{
+    --size: 5rem;
+    width: var(--size);
+    height: var(--size);
+}
+.page-update__text{
+    margin-bottom: 1rem;
+}
+.page-update__text--heading{
+    font-size: 2rem;
+    letter-spacing: normal;
+    color: black;
+}
+.page-update__text--paragraph{
+    font-size: 1.4rem;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.page-update__button--btn:link, .page-update__button--btn:visited{
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    letter-spacing: normal;
+    display: block;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    color: white;
+    background-color: #1877f2;
+    border-radius: 5px;
+}
+
+/* what's on your mind part of the clone */
+.mind{
+    width: 75%;
+    margin: 2rem auto;
+    box-shadow: 0 0 4px;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.mind__header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+}
+.mind__image{
+    --size: 5.5rem;
+    width: var(--size);
+    height: var(--size);
+    margin-right: auto;
+}
+.mind__image--img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.mind__form{
+    width: 85%;
+}
+.mind__form--input{
+    padding: 1rem 1.5rem;
+    height: 4rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #ddd;
+    font-size: 1.8rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mind__body{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding: .4rem 0;
+}
+.mind__body--container{ /*holds svg and some text*/
+    display: flex;
+    align-items: center;
+}
+.mind__body--container>*:not(:last-child){
+    margin-right: 1rem;
+}
+.mind__body>*:not(:last-child){
+    margin-right: auto;
+}
+.mind__body--icon{
+    --size: 2.5rem;
+    width: var(--size);
+    height: var(--size);
+}
+.mind__body--icon--first{
+    fill: crimson;
+}
+.mind__body--icon--second{
+    fill: green;
+}
+.mind__body--icon--third{
+    fill: yellow;
+}
+.mind__text{
+    font-size: 1.4rem;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/* active chats notification part of the webpage */
+.active{
+    width: 75%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.active__image{
+    --size:5rem;
+    position: relative;
+    width: var(--size);
+    min-width: var(--size);
+    max-width: var(--size);
+    height: var(--size);
+    margin-right: 1.5rem;
+}
+.active__image--img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.active__balloon--notification{
+    --size:1.3rem;
+    width: var(--size);
+    height: var(--size);
+    box-sizing: content-box;
+    border-radius: 50%;
+    background-color: green;
+    z-index: 10;
+    position: absolute;
+    bottom: .3rem;
+    right: -.5rem;
+    border: 3px solid white;
 }

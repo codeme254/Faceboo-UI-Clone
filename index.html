@@ -189,11 +189,24 @@
 
         <!-- the middle part of the website -->
 
-        <div class="main__middle">
+        <section class="main__middle">
             <div class="container__stories">
-                <button class="container__stories--button">
-                    &larr;
+                <button class="container__stories--button container__stories--button--left">
+                    <svg class="stories__button--svg">
+                        <use xlink:href="images/sprite.svg#icon-arrow-thin-left"></use>
+                    </svg>
                 </button>
+                <div class="stories-user">
+                    <div class="stories-user__image">
+                        <img src="/images/user-3.jpg" alt="user image" class="stories-user__image--img">
+                    </div>
+                    <span class="stories-user__svg">
+                        <svg class="stories-user__svg--icon">
+                            <use xlink:href="images/sprite.svg#icon-plus"></use>
+                        </svg>
+                    </span>
+                    <div class="stories-user__text">create story</div>
+                </div>
                 <div class="stories">
                     <div class="stories__image">
                         <img src="/images/nathan.jpg" alt="nathan image" class="stories__image--img">
@@ -230,16 +243,106 @@
                     </div>
                     <span class="stories__name">samuel ochiel</span>
                 </div>
+                <div class="stories">
+                    <div class="stories__image">
+                        <img src="/images/user-4.jpg" alt="nathan image" class="stories__image--img">
+                    </div>
+                    <div class="stories__background">
+                        <img src="/images/zone-5.jpg" alt="" class="stories__image--background">
+                    </div>
+                    <span class="stories__name">fenekasi bwibo II</span>
+                </div>
                 <button class="container__stories--button container__stories--button--right">
-                    &rarr;
+                    <svg class="stories__button--svg">
+                        <use xlink:href="images/sprite.svg#icon-arrow-thin-right"></use>
+                    </svg>
                 </button>
             </div>
-        </div>
+
+            <!-- the page upadate pop up like part -->
+            <div class="page-update">
+                <div class="page-update__header">
+                    <svg class="page-update__header--svg">
+                        <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                    <svg class="page-update__header--svg page-update__header--baselined">
+                        <use xlink:href="images/sprite.svg#icon-notebook"></use>
+                    </svg>
+                    <svg class="page-update__header--svg">
+                        <use xlink:href="images/sprite.svg#icon-cross"></use>
+                    </svg>
+                </div>
+                <div class="page-update__text">
+                    <h4 class="page-update__text--heading">
+                        Keep your Page up to date
+                    </h4>
+                    <p class="page-update__text--paragraph">
+                        Share updates about My Muzika Page by creating a new post, photo or video.
+                    </p>
+                </div>
+                <div class="page-update__button">
+                    <a href="#" class="page-update__button--btn">create post</a>
+                </div>
+            </div>
+
+            <!-- whats on your mind part of the webpage -->
+            <div class="mind">
+                <div class="mind__header">
+                    <div class="mind__image">
+                        <img src="/images/user-3.jpg" alt="user image" class="mind__image--img">
+                    </div>
+                    <div class="mind__form">
+                        <input type="text" class="mind__form--input" placeholder="What's on your mind, Freshia">
+                    </div>
+                </div>
+                <div class="mind__body">
+                    <div class="mind__body--container">
+                        <svg class="mind__body--icon mind__body--icon--first">
+                            <use xlink:href="images/sprite.svg#icon-video-camera"></use>
+                        </svg>
+                        <span class="mind__text">live video</span>
+                    </div>
+                    <div class="mind__body--container">
+                        <svg class="mind__body--icon mind__body--icon--second">
+                            <use xlink:href="images/sprite.svg#icon-photo"></use>
+                        </svg>
+                        <span class="mind__text">photo/video</span>
+                    </div>
+                    <div class="mind__body--container">
+                        <svg class="mind__body--icon mind__body--icon--third">
+                            <use xlink:href="images/sprite.svg#icon-mood-happy-outline"></use>
+                        </svg>
+                        <span class="mind__text">feeling/activity</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- the active chats part of the webapage -->
+            <div class="active">
+                <div class="active__image">
+                    <img src="images/user-4.jpg" alt="user 4" class="active__image--img">
+                    <span class="active__balloon--notification"></span>
+                </div>
+                <div class="active__image">
+                    <img src="images/sam.jpg" alt="sam" class="active__image--img">
+                    <span class="active__balloon--notification"></span>
+                </div>
+                <div class="active__image">
+                    <img src="images/zaph.jpg" alt="zaph" class="active__image--img">
+                    <span class="active__balloon--notification"></span>
+                </div>
+                <div class="active__image">
+                    <img src="images/nathan.jpg" alt="nathan" class="active__image--img">
+                    <span class="active__balloon--notification"></span>
+                </div>
+                <div class="active__image">
+                    <img src="images/humphrey.jpg" alt="humphrey" class="active__image--img">
+                    <span class="active__balloon--notification"></span>
+                </div>
+            </div>
+        </section>
 
         <!-- end of the middle part of the page -->
-
-
-
 
         <!-- the rightmost part of the webpage -->
         <div class="main__right u-overflow-scroll-y">
@@ -425,6 +528,6 @@
             </div>
         </div>
     </main>
-    
+    <script src="/javascript/app.js"></script>
 </body>
 </html>
